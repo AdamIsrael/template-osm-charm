@@ -19,3 +19,10 @@ includes:
     # - 'layer:osm-proxy-sol002'
     # - 'layer:osm-proxy-ssh'
     # - 'layer:osm-proxy-ansible'
+
+
+options:
+    # Turn off the use of virtualenv for the charms dependencies. This is
+    # required for actions to invoke the reactive framework
+    basic:
+        use_venv: false
