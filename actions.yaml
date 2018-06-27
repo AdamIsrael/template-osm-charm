@@ -1,0 +1,17 @@
+# Actions are yaml-defined primitives that are run for Day 1 or Day 2
+# operations. Each top-level key represents a primitive.
+#
+# To define a primitive that touches a file on the VNF, we create the example
+# below, which specifies a filename to be touched. When implemented, the
+# `touch` primitive will `touch` the filename, and declares that the `filename`
+# parameter is required.
+#
+# touch:
+#     description: "Touch a file on the VNF."
+#     params:
+#         filename:
+#             description: "The name of the file to touch."
+#             type: string
+#             default: ""
+#     required:
+#         - filename
